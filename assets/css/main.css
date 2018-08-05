@@ -48,4 +48,24 @@ h1 {
 /* CONTACT US CONTAINER */
 .contact-us-container {
   padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.contact-us-content-container {
+  width: 90%;
+  display: flex;
+}
+
+.contact-us-location-container {
+  text-align: left;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
 }
