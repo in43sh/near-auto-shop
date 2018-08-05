@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+}
+
+.main-container {
+  width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.25rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  padding: 1.2rem 4rem;
+  box-sizing: border-box;
+  /* opacity: 0.2; */
+}
+
+.text-logo {
+  color: rgb(191,178,129);
+  font-weight: bold;
+}
+
+.navbar-items {
+  display: flex;
+}
+
+.navbar-item {
+  padding: 0.5rem 1rem;
+}
+
+/* SERVICES CONTAINER */
+.services-container {
+  background-image: url(../img/volvo.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
