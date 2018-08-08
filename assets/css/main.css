@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0px;
   text-align: center;
@@ -16,12 +21,28 @@ h1 {
 .navbar {
   width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.navbar > ul, ul, li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.navbar-list {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.1);
-  font-size: 1.25rem;
-  padding: 1.2rem 4rem;
+  font-size: 1rem;
+  margin: 0 8rem;
   box-sizing: border-box;
   /* opacity: 0.2; */
+}
+
+.navbar-links {
+  color: #465765;
+  text-decoration: none;
 }
 
 .text-logo {
@@ -34,7 +55,8 @@ h1 {
 }
 
 .navbar-item {
-  padding: 0.5rem 1rem;
+  padding: 1.6rem 1rem;
+  cursor: pointer;
 }
 
 /* SERVICES CONTAINER */
