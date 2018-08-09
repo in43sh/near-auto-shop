@@ -20,33 +20,47 @@ h1 {
 
 /* NAVBAR */
 .navbar {
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
+  transition: 0.8s ease;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.01));
 }
 
-.navbar > ul, ul, li {
+.navbar > ul, li {
   list-style-type: none;
   list-style: none;
 }
 
 .navbar-list {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 0 8rem;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* margin: 0 auto; */
+  /* padding: 0 9rem; */
   box-sizing: border-box;
   /* opacity: 0.2; */
+  /* added by Baz 8/8 */
+}
+
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .navbar-links {
-  color: #465765;
+  transition: 1s ease;
+  color: rgba(1, 1, 1, 0.1);
   text-decoration: none;
 }
 
+.navbar:hover .navbar-links {
+  color: rgba(1, 1, 1, 1);
+}
+
 .text-logo {
-  color: rgb(191,178,129);
+  color: rgba(191,178,129,0.1);
   font-weight: bold;
 }
 
