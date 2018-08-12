@@ -82,7 +82,7 @@ h1 {
   justify-content: center;
   align-items:center;
   background-image: url(../img/volvo.jpg);
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -92,6 +92,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5.5rem;
 }
 
 .services-container-header {
@@ -118,6 +119,7 @@ h1 {
 
 .services-container-inner-header > p {
   font-size: 1.2rem;
+  box-sizing: border-box;
 }
 
 .services-container-items {
