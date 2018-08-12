@@ -25,7 +25,7 @@ h1 {
   display: flex;
   justify-content: center;
   transition: 0.8s ease;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.01));
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.01));
 }
 
 .navbar > ul, li {
@@ -51,7 +51,7 @@ h1 {
 
 .navbar-links {
   transition: 1s ease;
-  color: rgba(1, 1, 1, 0.1);
+  color: rgba(1, 1, 1, 0.5);
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ h1 {
 }
 
 .text-logo {
-  color: rgba(191,178,129,0.1);
+  color: rgba(1, 1, 1, 0.5);
   font-weight: bold;
 }
 
