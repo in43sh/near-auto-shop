@@ -21,6 +21,7 @@ h1 {
 /* NAVBAR */
 .navbar {
   position: fixed;
+  z-index: 1;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -77,45 +78,68 @@ h1 {
 .services-container {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items:center;
   background-image: url(../img/volvo.jpg);
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.services-container-content {
+  width: 75%;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .services-container-header {
+  width: 80%;
   display: flex;
-  background-color: #17a2b8;
-  height: 20%;
-  width: 50%;
+  justify-content: center;
+}
+
+.services-container-inner-header {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  padding: 4rem 2rem;
+  background-color: rgba(255,255,255,0.8);;
+  border-radius: 50px;
+}
+
+.services-container-inner-header > h1 {
+  margin-bottom: 3rem;
+}
+
+.services-container-inner-header > p {
+  font-size: 1.2rem;
 }
 
 .services-container-items {
   width: 80%;
-  height: 50%;
-  background-color: white;
-  opacity: 0.9;
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: rgba(255,255,255,0.8);;
+  opacity: 0.9;
+  box-sizing: border-box;
   border-radius: 50px;
 }
 
 .services-container-item {
-  display: flex;
-  box-sizing: border-box;
   width: 30%;
-  height: 70%;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding: 3rem 0;
   color: #494141;
 }
 
@@ -132,7 +156,7 @@ img {
   display: flex;
   font-size: 1.8vw;
   font-weight: bold;
-  }
+}
 
 /*
 .services-container-items {
@@ -170,6 +194,7 @@ img {
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 1rem 0 0 1rem;
 }
 
 .contact-us-info {
@@ -184,10 +209,12 @@ img {
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 1rem 0 0 1rem;
 }
 
 .contact-us-input-container {
   margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .contact-us-input {
@@ -195,6 +222,7 @@ img {
   border: 1px solid #ced4da;
   padding: .4rem .75rem;
   font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .contact-us-send-btn {
