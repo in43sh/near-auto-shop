@@ -104,22 +104,23 @@ li {
 /* SERVICES CONTAINER */
 
 .services-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/volvo.jpg);
-    height: 80vh;
-    background-size: cover;
-    background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-image: url(../img/volvo.jpg);
+  /* height: 100vh; */
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .services-container-content {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5.5rem;
 }
 
 .services-container-header {
@@ -145,8 +146,9 @@ li {
     margin-bottom: 3rem;
 }
 
-.services-container-inner-header>p {
-    font-size: 1.2rem;
+.services-container-inner-header > p {
+  font-size: 1.2rem;
+  box-sizing: border-box;
 }
 
 .services-container-items {
@@ -173,39 +175,23 @@ li {
     color: #494141;
 }
 
-.services-container-item:hover {
-    color: black;
-}
-
 img {
     box-sizing: border-box;
     width: 100%;
 }
 
 .services-container-item-text {
-    display: flex;
-    font-size: 1.8vw;
-    font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-
-
-/*
-.services-container-items {
-  display: flex;
-  }
-  .services-container-item {
-    padding: 0.5rem 1rem;
-    background-color: white;
-  }*/
-
 
 /* CONTACT US CONTAINER */
 
 .contact-us-container {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-us-container>h1 {
@@ -223,11 +209,11 @@ img {
 }
 
 .contact-us-location-container {
-    text-align: left;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0 0 1rem;
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0 1rem;
 }
 
 .contact-us-info {
@@ -269,6 +255,77 @@ img {
 /* FOOTER */
 
 footer {
-    margin-top: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  /* SERVICES CONTAINER */
+  .services-container-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5.5rem;
+  }
+
+  .services-container-inner-header {
+    width: 100%;
+  }
+
+  .services-container-items {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  .services-container-item {
+    padding: 1.5rem 0;
+  }
+
+  .services-container-item-text {
+    font-size: 2rem;
+  }
+
+  .services-container-item {
+    width: 70%;
+  }
+
+  /* CONTACT US CONTAINER */
+  .contact-us-content-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us-location-container {
+    width: 80%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contact-us-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .services-container-items {
+    font-size: 1.5rem;
+  }
+
+  .services-container-item-text {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
+  }
 }
