@@ -45,12 +45,7 @@ li {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    /* background-color: rgba(255, 255, 255, 0.1); */
-    /* margin: 0 auto; */
-    /* padding: 0 9rem; */
     box-sizing: border-box;
-    /* opacity: 0.2; */
-    /* added by Baz 8/8 */
 }
 
 .navbar:hover {
@@ -66,9 +61,13 @@ li {
 .navbar:hover .navbar-links {
     color: rgba(1, 1, 1, 1);
 }
+.navbar:hover .text-logo {
+    color: rgba(1, 1, 1, 0.7);
+}
 
 .text-logo {
-    color: rgba(1, 1, 1, 0.5);
+    transition: 1s ease;
+    color: rgba(1, 1, 1, 0.3);
     font-weight: bold;
 }
 
@@ -84,6 +83,7 @@ li {
 @media(max-width: 1024px) {
     .navbar {
         background-color: rgba(255, 255, 255, 1);
+        height: 71px;
     }
     .navbar-links {
         font-weight: 1000;
@@ -159,7 +159,7 @@ li {
     align-items: center;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
-    ;
+    margin-bottom: 30px;
     opacity: 0.9;
     box-sizing: border-box;
     border-radius: 50px;
@@ -178,12 +178,17 @@ li {
 img {
     box-sizing: border-box;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 .services-container-item-text {
   font-size: 1.1rem;
   font-weight: bold;
 }
+
+.services-container-item-text-secondary {
+    font-size: 0.9rem;
+  }
 
 /* CONTACT US CONTAINER */
 
